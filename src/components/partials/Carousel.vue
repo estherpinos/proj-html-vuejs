@@ -26,38 +26,27 @@
                   <button class="btn-read-more bg-transparent "> READ MORE</button>
                 </div>
               </div>
-              <div class="right w-50 p-0 bg-black position-relative  ">2</div>
+              <div class="right w-50 p-0">
 
-            </div>
+                <div class="image-right position-relative">
 
-            <!-- <div class=" d-flex flex-row justify-content-between ">
-          
-                 Text
-              <div class="position-relative d-flex flex-column border-2 left">
-                <div class="text-carousel position-absolute">
-                  <h3>Devotion that never ends</h3>
-                  <p>Neque porro quisquam est, qui dolorem ipsum quio dolor sit amet consectetur, adipisci velit, sed quia non numaquam eius modi.</p>
-                  <button class="btn-read-more bg-transparent "> READ MORE</button>
-                </div>
-                
-              </div>
-
-              <div class="img-carousel position-relative">
-
-                  Persone
+                  <!-- Persone -->
                   <img class="persona1" src="../../assets/img/h-2-slider-img-15.png">
                   <img class="persona2" src="../../assets/img/h-2-slider-img-16.png">
 
-                  Foglie
+                  <!-- Foglie -->
                   <img class="pink-left" src="../../assets/img/short-slider-rev-1-img-2.png">
                   <img class="salmon-left" src="../../assets/img/short-slider-rev-1-img-10.png">
                   <img class="pink-right" src="../../assets/img/short-slider-rev-1-img-6.png">
                   <img class="purple-right" src="../../assets/img/short-slider-rev-1-img-7.png">
                   <img class="green-left" src="../../assets/img/short-slider-rev-1-img-8.png">
                   <img class="group-flower" src="../../assets/img/h-2-slider-img-17.png">
-                  
                 </div>
-            </div> -->
+                
+                 
+              </div>
+
+            </div>
            
 
           
@@ -101,6 +90,16 @@
           top: 50%;
           transform: translateY(-50%);
           right: 0;
+
+          p{
+            font-size: 12px;
+          }
+
+          .btn-read-more{
+            border: 1px solid $fill-salmon;
+            font-size: 12px;
+            padding:  5px 20px;
+          }
         }
 
       }
@@ -108,106 +107,86 @@
       .right{
         width: 50%;
         height: 100%;
+
+        .image-right{
+          width: 100%;
+          height: 100%;
+
+         .persona1{
+          height: 250px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 45px;
+         }
+
+          .persona2{
+          height:250px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 250px;
+          }
+
+          // Flowers
+              .pink-left{
+            position: absolute;
+            top: 50px;
+            left:20px;
+            width: 35px;
+          }
+
+          .salmon-left{
+            position: absolute;
+            top: 180px;
+            left: 5px;
+            transform: scaleX(-1);
+            width: 35px;
+          }
+
+          .pink-right{
+            position: absolute;
+            top: 100px;
+            left: 430px;
+            width: 35px;
+            }
+
+          .purple-right{
+            position: absolute;
+            transform: scaleX(-1);
+            top: 25px;
+            left: 380px;
+            width: 40px;
+          }
+
+          .green-left{
+            position: absolute;
+            transform: scaleX(-1);
+            bottom: 70px;
+            left: 20px;
+            width: 40px;
+          }
+
+          .group-flower{
+            position: absolute;
+            bottom: 70px;
+            left:430px;
+            width: 50px;
+          }
+
+        }
+        
+        
+
+      
+
+       
+
+    
+       
+
+
       }
-
-      // .left{
-      //   width: 50%;
-      //   height: 100%;
-      //   .text-carousel{
-      //     position: absolute;
-      //     width: 400px;
-      //     top: 5%;
-      //     right: 0;
-
-      //   h3{
-      //     font-size: 45px;
-      //   }
-
-      //   p{
-      //     font-size: 12px;
-      //   }
-
-      //   .btn-read-more{
-      //     padding: 8px;
-      //     width: 100px;
-      //     font-size: 12px;
-      //     border: 1px solid $fill-salmon;
-
-      //   }
-      // }
-      // }
-
-      
-
-      // .img-carousel{
-      //   width: 50%;
-
-      //   .persona1{
-      //   height: 250px;
-      //   position: absolute;
-      //   top: 50%;
-      //   transform: translateY(-50%);
-      //   right: 350px;
-      // }
-
-      // .persona2{
-      //   height:250px;
-      //   position: absolute;
-      //   top: 50%;
-      //   transform: translateY(-50%);
-      //   right: 150px;
-      // }
-
-      // // Flowers
-
-      // .pink-left{
-      //   position: absolute;
-      //   top: 50px;
-      //   right:540px;
-      //   width: 35px;
-      // }
-
-      // .salmon-left{
-      //   position: absolute;
-      //   top: 200px;
-      //   right: 600px;
-      //   transform: scaleX(-1);
-      //   width: 35px;
-      // }
-
-      // .pink-right{
-      //   position: absolute;
-      //   top: 100px;
-      //   right: 140px;
-      //   width: 35px;
-      // }
-
-      // .purple-right{
-      //   position: absolute;
-      //   transform: scaleX(-1);
-      //   top: 25px;
-      //   right: 180px;
-      //   width: 40px;
-      // }
-
-      // .green-left{
-      //   position: absolute;
-      //   transform: scaleX(-1);
-      //   bottom: 80px;
-      //   right: 550px;
-      //   width: 35px;
-      // }
-
-      // .group-flower{
-      //   position: absolute;
-      //   bottom: 70px;
-      //   right: 100px;
-      //   width: 50px;
-      // }
-      // }
-
-      
-      // Persons
 
     
 
