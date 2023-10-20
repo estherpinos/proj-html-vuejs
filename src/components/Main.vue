@@ -15,10 +15,19 @@ export default{
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active bg-dark" data-bs-interval="10000">
+
+          <!-- CAROUSEL 1 -->
+          <div class="carousel-item active bg-white position-relative " data-bs-interval="10000">
+            <div class="text-carousel d-flex flex-column justify-content-start">
+              <h3>Devotion that never ends</h3>
+              <p>Neque porro quisquam est, qui dolorem ipsum quio dolor sit amet consectetur, adipisci velit, sed quia non numaquam eius modi.</p>
+              <button class="btn-read-more bg-transparent "> READ MORE</button>
+            </div>
           </div>
+          <!-- CAROUSEL 2 -->
           <div class="carousel-item bg-danger" data-bs-interval="2000">
           </div>
+          <!-- CAROUSEL 3 -->
           <div class="carousel-item bg-body-secondary">
 
           </div>
@@ -46,18 +55,33 @@ export default{
   .jumbotron{
     height: 350px;
     .carousel-item{
-      height: 350px;
+      height: 400px;
+
+      .text-carousel{
+        width: 325px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50%;
+
+        h3{
+          font-size: 45px;
+        }
+
+        p{
+          font-size: 12px;
+        }
+
+        .btn-read-more{
+          padding: 8px;
+          width: 100px;
+          font-size: 12px;
+          border: 1px solid $fill-salmon;
+          
+        }
+      }
     }
-    .div-1{
-      width: 50%;
-      height: 100%;
-      border: 2px solid yellow;
-    }
-    .div-2{
-      width: 50%;
-      height: 100%;
-      border: 2px solid red;
-    }
+    
    
       
     
