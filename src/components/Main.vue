@@ -3,6 +3,8 @@
 import { store } from '../data/Store';
 import Carousel from './partials/Carousel.vue';
 import Cards from './partials/Cards.vue';
+import Working from './partials/Working.vue';
+import Contact from './partials/Contact.vue';
 
 export default{
     name: 'Main',
@@ -13,7 +15,9 @@ export default{
     },
     components: { 
       Carousel,
-      Cards
+      Cards,
+      Working,
+      Contact,
      }
 }
 </script>
@@ -32,6 +36,7 @@ export default{
        :key="index"
        :image="item.src">
       </Cards>
+      <Working></Working>
       </div>
     </section>
   </main>
