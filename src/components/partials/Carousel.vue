@@ -53,10 +53,56 @@
 
           </div>
           <!-- CAROUSEL 2 -->
-          <div class="carousel-item bg-danger" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="row w-100 h-100">
+              <div class="left w-50 p-0 position-relative ">
+                <div class="text-carousel position-absolute">
+                  <h3>Devotion that never ends</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum neque laudantium debitis perferendis architecto voluptatibus aliquid vero maxime alias.</p>
+                  <button class="btn-read-more bg-transparent "> READ MORE</button>
+                </div>
+              </div>
+              <div class="right w-50 p-0">
+
+                <div class="image-right position-relative">
+
+                  <!-- Persone -->
+                  <img class="persona3" src="../../assets/img/h-2-slider-img-11.png">
+                </div>
+                
+                 
+              </div>
+
+            </div>
           </div>
           <!-- CAROUSEL 3 -->
-          <div class="carousel-item bg-body-secondary">
+          <div class="carousel-item ">
+            <div class="row w-100 h-100">
+              <div class="left w-50 p-0 position-relative ">
+                <div class="text-carousel position-absolute">
+                  <h3>Devotion that never ends</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate perspiciatis saepe, nam veniam doloremque.</p>
+                  <button class="btn-read-more bg-transparent "> READ MORE</button>
+                </div>
+              </div>
+              <div class="right w-50 p-0">
+
+                <div class="image-right position-relative">
+
+                  <!-- Persone -->
+                  <img class="persona4" src="../../assets/img/short-slider-rev-1-img-3.png">
+                  
+
+                  <!-- Foglie -->
+                  <img class="salmon-left" src="../../assets/img/short-slider-rev-1-img-5.png">
+                  <img class="green-left" src="../../assets/img/short-slider-rev-1-img-4.png">
+                  <img class="group-flower" src="../../assets/img/short-slider-rev-1-img-5.png">
+                </div>
+                
+                 
+              </div>
+
+            </div>
 
           </div>
         </div>
@@ -78,6 +124,7 @@
 
 .jumbotron{
     height: 350px;
+    margin-bottom: 30px;
     .carousel-item{
       height: 380px;
 
@@ -128,6 +175,21 @@
           left: 250px;
           }
 
+          .persona3{
+            position: absolute;
+            width: 450px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+          }
+          .persona4{
+            position: absolute;
+            width: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 45px;
+          }
+
           // Flowers
               .pink-left{
             position: absolute;
@@ -176,15 +238,6 @@
 
         }
         
-        
-
-      
-
-       
-
-    
-       
-
 
       }
 
