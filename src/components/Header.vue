@@ -1,7 +1,10 @@
 <script>
 
 export default{
-  name:'Header'
+  name:'Header',
+  props:{
+    menuHeader: Object
+  }
 }
 </script>
 
@@ -13,12 +16,10 @@ export default{
     <div class="menu-header d-flex align-items-center ">
       <nav>
         <ul class=" d-flex d-inline-block m-0 p-0">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Elements</a></li>
+          <li v-for="item in menuHeader">
+            <a href="#">{{ item }}</a>
+          </li>
+          
         </ul>
       </nav>
       <div>
@@ -48,22 +49,21 @@ export default{
             a{
               text-decoration: none;
               color: $tx-black;
+              font-weight: 600;
               text-transform: uppercase;
               font-size: 10px;
-              padding-right: 25px;
+              padding-right: 28px;
 
               
-            }
-
-            
+            }   
               
         }
       }
     }
 
     .header-dots{
-      width: 12px;
-      margin-left: 5px;
+      width: 17px;
+      margin-left: 2px;
       
     }
   }

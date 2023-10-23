@@ -2,6 +2,17 @@ import { reactive } from 'vue';
 
 // le proprietà dello'oggetto reactive sono proprità reattive 
 export const store = reactive({
+
+ menuHeader:[
+  'home',
+  'pages',
+  'portfolio',
+  'blog',
+  'shop',
+  'elements'
+ ],
+
+
  images:[
 
   {

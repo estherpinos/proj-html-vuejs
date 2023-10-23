@@ -8,6 +8,8 @@
 <template>
    <section class="jumbotron">
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
+
+        <!-- Dots -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -47,11 +49,9 @@
               </div>
 
             </div>
-           
-
-          
 
           </div>
+
           <!-- CAROUSEL 2 -->
           <div class="carousel-item" data-bs-interval="2000">
             <div class="row w-100 h-100">
@@ -75,6 +75,7 @@
 
             </div>
           </div>
+
           <!-- CAROUSEL 3 -->
           <div class="carousel-item ">
             <div class="row w-100 h-100">
@@ -106,12 +107,14 @@
 
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
           <span class="visually-hidden">Previous</span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -256,6 +259,38 @@
         
 
       }
+    }
+
+    .carousel-control-prev{
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      padding: 3px;
+      background-color: $tx-salmon;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2%;
+
+      .fa-solid{
+        font-size: 10px;
+      }
+     
+    }
+
+    .carousel-control-next{
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      padding: 3px;
+      background-color: $tx-salmon;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2%;
+
+      .fa-solid{
+        font-size: 10px;
+      }
+     
     }
 
 
