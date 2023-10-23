@@ -24,35 +24,25 @@ export const store = reactive({
   }
  ],
 
- working:[
+ blog:[
 
   {
-    src:'fa-solid fa-lightbulb fa-2x ',
-    title:'First theres an idea',
-    text:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-    
-
+    src:'h-2-blog-img-1.jpg',
+    text: 'This way, loves: a detailed guide throught new design',
+    nome:'By Emily Fields'
   },
   {
-    src:'fa-regular fa-comment fa-2x',
-    title:'Then we talk about',
-    text:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-    
+    src:'h-2-blog-img-1.jpg',
+    text: 'I try to give people a different way of looking art',
+    nome:'By Emily Fields'
   },
   {
-    src:'fa-solid fa-cloud fa-2x',
-    title:'And we think about',
-    text:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-    
-  },
-  {
-    src:' fa-solid fa-pencil fa-2x',
-    title:'So we draw along',
-    text:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-   
+    src:'h-2-blog-img-1.jpg',
+    text: 'introduce Richard Laperrière of those amazinf feautures',
+    nome:'By Emily Fields'
   }
- ]
 
+ ]
 
 
 

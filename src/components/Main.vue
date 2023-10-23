@@ -5,6 +5,8 @@ import Carousel from './partials/Carousel.vue';
 import Cards from './partials/Cards.vue';
 import Working from './partials/Working.vue';
 import Contact from './partials/Contact.vue';
+import Blog from './partials/Blog.vue';
+import Footer from './Footer.vue';
 
 export default{
     name: 'Main',
@@ -18,6 +20,8 @@ export default{
       Cards,
       Working,
       Contact,
+      Blog,
+      Footer
      }
 }
 </script>
@@ -38,6 +42,7 @@ export default{
       </Cards>
       <Working></Working>
       <Contact></Contact>
+      <Blog></Blog>
       </div>
     </section>
   </main>
