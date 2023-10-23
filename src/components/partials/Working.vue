@@ -87,8 +87,8 @@ export default{
 
 section{
   margin-bottom: 100px;
-}
-.contents{
+
+  .contents{
   width: 60%;
   margin: 0 auto;
 
@@ -97,35 +97,38 @@ section{
     height: 100%;
   }
 
-}
-
-.imgs-div{
-  top: 120px;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  .circle-wk{
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $bg-brown-light;
-
   }
 
-  h5{
-      font-size: 15px;
+  .imgs-div{
+    top: 120px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .circle-wk{
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $bg-brown-light;
+
     }
 
-    p{
-      font-size: 12px;
-      color: $tx-grey-dark-dark;
-    
-    }
+    h5{
+        font-size: 15px;
+      }
+
+      p{
+        font-size: 12px;
+        color: $tx-grey-dark-dark;
+      
+      }
+  }
 }
+
+
 
 
 
