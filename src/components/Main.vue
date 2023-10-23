@@ -1,12 +1,17 @@
 <script>
 
 import { store } from '../data/Store';
+import Header from './Header.vue';
 import Carousel from './partials/Carousel.vue';
 import Cards from './partials/Cards.vue';
 import Working from './partials/Working.vue';
 import Contact from './partials/Contact.vue';
 import Blog from './partials/Blog.vue';
 import Footer from './Footer.vue';
+
+const routes = [
+  { path: '/section', component: Carousel }
+]
 
 export default{
     name: 'Main',
@@ -16,6 +21,7 @@ export default{
         };
     },
     components: {
+      Header,
       Carousel,
       Cards,
       Working,
@@ -24,37 +30,55 @@ export default{
       Footer
      },
      methods: {
-    navigateToSection() {
-      this.$router.push('/section')
+    scrollToSection() {
+      const section = document.getElementById('sectionId');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    
+  
+  
   }
 }
 </script>
 
 <template>
+  <header  id="sectionId"></header>
   <main>
 
     <!-- Jumbotron -->
-    <Carousel id="menu"></Carousel>
+    <Carousel></Carousel>
 
 
     <!-- Section 1 -->
-    <section class="section1">
+    <section class="section1 position-relative ">
       <div class="row">
        <Cards v-for="(item,index) in store.images"
        :key="index"
        :image="item.src">
       </Cards>
       </div>
+      <button class="btn-menu2 d-flex justify-content-center align-items-center" @click="scrollToSection">
+          <img src="svg-2.svg" alt="">
+      </button>
     </section>
 
 
     <!-- Section Working -->
-    <Working></Working>
+
+    <section class="position-relative ">
+      <Working></Working>
+      <button class="btn-menu d-flex justify-content-center align-items-center" @click="scrollToSection">
+          <img src="svg-2.svg" alt="">
+       </button>
+    </section>
+  
 
 
     <!-- Section contact -->
-    <Contact></Contact>
+      <Contact></Contact>
+    
 
 
     <!-- Section blog -->
@@ -68,7 +92,7 @@ export default{
           :name="item.name"
           ></Blog>
         </div>
-        <button class="btn-menu d-flex justify-content-center align-items-center" @click="navigateToSection">
+        <button class="btn-menu1 d-flex justify-content-center align-items-center" @click="scrollToSection">
           <img src="svg-2.svg" alt="">
         </button>
       </div>
@@ -86,8 +110,24 @@ export default{
   width: 70%;
   margin: 0 auto;
   padding: 80px 0;
+}
 
-  .btn-menu{
+.btn-menu{
+    border: none;
+    padding: 8px;
+    aspect-ratio: 1.1;
+    background-color: $bg-green-light;
+    position: absolute;
+    bottom: -65px;
+    right: 20px;
+    
+
+    img{
+      width: 10px;
+
+    }
+  }
+  .btn-menu1{
     border: none;
     padding: 8px;
     aspect-ratio: 1.1;
@@ -102,7 +142,22 @@ export default{
 
     }
   }
-}
+
+  .btn-menu2{
+    border: none;
+    padding: 8px;
+    aspect-ratio: 1.1;
+    background-color: $bg-green-light;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    
+
+    img{
+      width: 10px;
+
+    }
+  }
 
 
 
