@@ -29,17 +29,17 @@ export const store = reactive({
   {
     src:'h-2-blog-img-1.jpg',
     text: 'This way, loves: a detailed guide throught new design',
-    nome:'By Emily Fields'
+    name:'By Emily Fields'
   },
   {
-    src:'h-2-blog-img-1.jpg',
+    src:'h-2-blog-img-2.jpg',
     text: 'I try to give people a different way of looking art',
-    nome:'By Emily Fields'
+    name:'By Emily Fields'
   },
   {
-    src:'h-2-blog-img-1.jpg',
+    src:'h-2-blog-img-3.jpg',
     text: 'introduce Richard Laperrière of those amazinf feautures',
-    nome:'By Emily Fields'
+    name:'By Emily Fields'
   }
 
  ]

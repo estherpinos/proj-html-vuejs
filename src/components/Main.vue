@@ -15,7 +15,7 @@ export default{
             store
         };
     },
-    components: { 
+    components: {
       Carousel,
       Cards,
       Working,
@@ -29,22 +29,41 @@ export default{
 <template>
   <main>
 
-    <!-- JUMBOTRON -->
+    <!-- Jumbotron -->
     <Carousel></Carousel>
-   
 
-    <!-- SECTION 1 BLOG -->
+
+    <!-- Section 1 -->
     <section class="section1">
       <div class="row">
        <Cards v-for="(item,index) in store.images"
        :key="index"
        :image="item.src">
       </Cards>
-      <Working></Working>
-      <Contact></Contact>
-      <Blog></Blog>
       </div>
     </section>
+
+
+    <!-- Section Working -->
+    <Working></Working>
+
+
+    <!-- Section contact -->
+    <Contact></Contact>
+
+
+    <!-- Section blog -->
+    <section class="section-blog">
+      <div class="row">
+          <Blog v-for="(item, index) in store.blog"
+          :key="index"
+          :image="item.src"
+          :text="item.text"
+          :name="item.name"
+          ></Blog>
+        </div>
+    </section>
+    
   </main>
 
 </template>
@@ -52,8 +71,14 @@ export default{
 <style lang="scss" scoped>
 @use '../sass/variabiles' as *;
 
-  
-  
+.section-blog{
+  width: 70%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+
+
 
 
 </style>
