@@ -23,7 +23,7 @@ export default{
 
   <section class=" p-5 position-relative ">
 
-    <h2 class=" text-center ">Working process</h2>
+    <h2 class=" text-center ">Working <span class="diferent-word">process</span></h2>
     <div class="contents mt-5 mb-5">
       <img src="svg-3.svg ">
      
@@ -87,6 +87,18 @@ export default{
 
 section{
   margin-bottom: 100px;
+
+  h2{
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .diferent-word{
+    font-family: 'Metal', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 50px;
+  }
 
   .contents{
   width: 60%;

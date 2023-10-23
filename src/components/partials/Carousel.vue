@@ -23,9 +23,9 @@
             <div class="row w-100 h-100">
               <div class="left w-50 p-0 position-relative ">
                 <div class="text-carousel position-absolute">
-                  <h3>Devotion that never ends</h3>
+                  <h3>Devotion that never <span class="diferent-word">ends</span> </h3>
                   <p>Neque porro quisquam est, qui dolorem ipsum quio dolor sit amet consectetur, adipisci velit, sed quia non numaquam eius modi.</p>
-                  <button class="btn-read-more bg-transparent "> READ MORE</button>
+                  <button class="btn-read-more"> READ MORE</button>
                 </div>
               </div>
               <div class="right w-50 p-0">
@@ -57,9 +57,9 @@
             <div class="row w-100 h-100">
               <div class="left w-50 p-0 position-relative ">
                 <div class="text-carousel position-absolute">
-                  <h3>Devotion that never ends</h3>
+                  <h3>Devotion that never <span class="diferent-word">ends</span></h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum neque laudantium debitis perferendis architecto voluptatibus aliquid vero maxime alias.</p>
-                  <button class="btn-read-more bg-transparent "> READ MORE</button>
+                  <button class="btn-read-more"> READ MORE</button>
                 </div>
               </div>
               <div class="right w-50 p-0">
@@ -81,9 +81,9 @@
             <div class="row w-100 h-100">
               <div class="left w-50 p-0 position-relative ">
                 <div class="text-carousel position-absolute">
-                  <h3>Devotion that never ends</h3>
+                  <h3>Devotion that never <span class="diferent-word">ends</span></h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate perspiciatis saepe, nam veniam doloremque.</p>
-                  <button class="btn-read-more bg-transparent "> READ MORE</button>
+                  <button class="btn-read-more "> READ MORE</button>
                 </div>
               </div>
               <div class="right w-50 p-0">
@@ -134,12 +134,12 @@
         button{
           width: 6px; 
           height: 6px; 
-          background-color: $tx-salmon; 
+          background-color: $border-brown; 
           margin-right: 10px;
           border-radius: 100%;
 
           &.active{
-            transform: scale(1.5);
+            transform: scale(1.3);
           }
         }
       }
@@ -156,15 +156,35 @@
           transform: translateY(-50%);
           right: 0;
 
+          h3{
+            font-size: 60px;
+            font-weight: 200;
+
+            .diferent-word{
+              font-family: 'Metal', serif;
+              font-style: italic;
+              font-weight: 600;
+              font-size: 70px;
+            }
+          }
+
           p{
             font-size: 12px;
           }
 
           .btn-read-more{
             border: 2px solid $fill-salmon;
+            background-color: white;
             font-size: 10px;
             font-weight: 700;
             padding:  8px 25px;
+
+            &:hover{
+              background-color: $fill-salmon;
+              color: white;
+
+
+            }
           }
         }
 

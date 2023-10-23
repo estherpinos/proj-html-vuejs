@@ -46,6 +46,7 @@ export default{
         list-style: none;
         li{
           text-decoration: none;
+
             a{
               text-decoration: none;
               color: $tx-black;
@@ -54,6 +55,11 @@ export default{
               font-size: 10px;
               padding-right: 28px;
 
+              &::before{
+                box-shadow: 0 5px 0px 0px salmon;
+                display: block;
+                position: absolute;
+              }
               
             }   
               
