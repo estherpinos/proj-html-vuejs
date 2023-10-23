@@ -36,8 +36,8 @@ export default{
       <div class="social">
         <p class=" m-0 p-0">Stay in touch with us</p>
         <div>
-         <i v-for="item in store.footer"
-         class=item></i>
+         <i class="px-2" v-for="item in store.footer"
+         :class=item></i>
         </div>
       </div>
 
@@ -68,6 +68,12 @@ footer{
       p{
         font-size: 11px;
         padding: 20px;
+      }
+
+      .social{
+        i{
+          font-size: 12px;
+        }
       }
   }
 }
