@@ -56,7 +56,7 @@ footer{
       }
 
       p{
-        font-size: 12px;
+        font-size: 11px;
         padding: 20px;
       }
   }
