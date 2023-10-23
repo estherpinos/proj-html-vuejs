@@ -44,8 +44,15 @@ section{
         padding: 8px 35px;
         background-color: $bg-green-light;
         font-size: 10px;
+
+        &:hover{
+          background-color: $bg-brown-dark;
+          color:white;
+        }
         
       }
+
+
       
     }
  

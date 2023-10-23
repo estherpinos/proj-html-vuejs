@@ -122,9 +122,24 @@
 <style lang="scss" scoped>
 @use '../../sass/variabiles' as *;
 
+
 .jumbotron{
     height: 350px;
     margin-bottom: 30px;
+
+    .carousel-indicators{
+        button{
+          width: 6px; 
+          height: 6px; 
+          background-color: $tx-salmon; 
+          margin-right: 10px;
+          border-radius: 100%;
+
+          &.active{
+            transform: scale(1.5);
+          }
+        }
+      }
     .carousel-item{
       height: 380px;
 
@@ -143,9 +158,10 @@
           }
 
           .btn-read-more{
-            border: 1px solid $fill-salmon;
-            font-size: 12px;
-            padding:  5px 20px;
+            border: 2px solid $fill-salmon;
+            font-size: 10px;
+            font-weight: 700;
+            padding:  8px 25px;
           }
         }
 
@@ -240,10 +256,9 @@
         
 
       }
-
-    
-
     }
+
+
 
    
 
