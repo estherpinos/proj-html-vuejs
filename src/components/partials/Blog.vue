@@ -37,7 +37,7 @@ export default{
     
       
         <div class="card-body p-0">
-          <p class="text-card">{{ text }}</p>
+          <p class="text-card p-0  m-0 ">{{ text }}</p>
           <p class="name-card">{{ name }}</p>
 
          
