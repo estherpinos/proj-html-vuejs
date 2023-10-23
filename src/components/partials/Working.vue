@@ -71,7 +71,7 @@ export default{
             </div>
         
             <h5>First theres an idea</h5>
-            <p class=" text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, possimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, possimus.</p>
           </div>
         </div>
       </div>
@@ -122,6 +122,7 @@ section{
 
     p{
       font-size: 12px;
+      color: $tx-grey-dark-dark;
     
     }
 }

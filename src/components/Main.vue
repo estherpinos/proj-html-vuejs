@@ -37,6 +37,7 @@ export default{
        :image="item.src">
       </Cards>
       <Working></Working>
+      <Contact></Contact>
       </div>
     </section>
   </main>
