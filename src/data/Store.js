@@ -53,10 +53,15 @@ export const store = reactive({
     name:'By Emily Fields'
   }
 
+ ],
+
+ footer:[
+
+  'fa-brands fa-twitter',
+  'fa-brands fa-pinterest-p',
+  'fa-brands fa-facebook-f',
+  'fa-brands fa-linkedin-in'
  ]
-
-
-
 
 })
 

@@ -1,7 +1,14 @@
 <script>
 
+import { store } from '../data/Store';
+
 export default{
-  name:'Footer'
+  name:'Footer',
+  data(){
+    return{
+      store
+    }
+  }
 }
 </script>
 
@@ -28,7 +35,10 @@ export default{
 
       <div class="social">
         <p class=" m-0 p-0">Stay in touch with us</p>
-        <div class="logos"></div>
+        <div>
+         <i v-for="item in store.footer"
+         class=item></i>
+        </div>
       </div>
 
     </div>
