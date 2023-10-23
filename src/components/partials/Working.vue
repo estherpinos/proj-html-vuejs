@@ -89,7 +89,7 @@ section{
   margin-bottom: 100px;
 
   h2{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
   }
 
@@ -97,7 +97,7 @@ section{
     font-family: 'Metal', serif;
     font-style: italic;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .contents{

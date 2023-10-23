@@ -10,7 +10,7 @@ export default{
   <section>
 
     <div class="contents d-flex flex-column justify-content-center ">
-      <h4>Want to work with us? Send us a message!</h4>
+      <h4>Want to work with us? Send us <span class="diferent-word">a message!</span></h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur obcaecati perferendis atque magnam voluptates dolorum porro blanditiis. Repudiandae, excepturi expedita!</p>
       <button class=" btn-contact border-0 ">CONTACT</button>
     </div>
@@ -32,6 +32,17 @@ section{
       height: 100%;
       width: 70%;
       margin: 0 auto;
+
+      h4{
+        font-size: 35px;
+        font-weight: 400;
+        .diferent-word{
+          font-family: 'Metal', serif;
+          font-style: italic;
+          font-weight: 600;
+          font-size: 45px;
+        }
+      }
 
       p{
         font-size: 15px;
